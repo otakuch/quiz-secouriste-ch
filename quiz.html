@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz interactif de secourisme - Testez vos connaissances">
+    <title>Quiz en cours | Quiz Secouriste Suisse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23E30613' width='100' height='100' rx='15'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white'>+</text></svg>">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"></div>
+                        <div class="logo-text">Quiz<span>Secouriste</span>.ch</div>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="container">
+                <!-- Quiz Header with Progress -->
+                <div class="quiz-header" id="quiz-header">
+                    <!-- Populated by JavaScript -->
+                    <div class="quiz-info">
+                        <span class="quiz-level-badge">Chargement...</span>
+                    </div>
+                </div>
+
+                <!-- Question Container -->
+                <div id="question-container">
+                    <!-- Questions rendered here by JavaScript -->
+                    <div class="question-card" style="text-align: center; padding: 3rem;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+                        <p>Chargement des questions...</p>
+                    </div>
+                </div>
+
+                <!-- Quiz Actions -->
+                <div class="quiz-actions" id="quiz-actions">
+                    <!-- Buttons rendered by JavaScript -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p class="footer-text">
+                        © 2025 Quiz Secouriste Suisse — Outil de formation non officiel
+                    </p>
+                    <div class="footer-links">
+                        <a href="https://www.resuscitation.ch" target="_blank" rel="noopener">SRC</a>
+                        <a href="https://www.ivr-ias.ch" target="_blank" rel="noopener">IAS</a>
+                        <a href="https://www.samariter.ch" target="_blank" rel="noopener">SSS</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Load Questions -->
+    <script src="js/questions/niveau1.js"></script>
+    <script src="js/questions/niveau2.js"></script>
+    <script src="js/questions/niveau3.js"></script>
+    
+    <!-- Load Quiz Engine -->
+    <script src="js/quiz-engine.js"></script>
+</body>
+</html>

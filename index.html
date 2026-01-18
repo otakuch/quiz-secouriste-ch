@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz interactif pour tester les connaissances des secouristes suisses - BLS-AED, Secouriste, Médecine de catastrophe">
+    <meta name="author" content="Quiz Secouriste CH">
+    <title>Quiz Secouriste Suisse | Testez vos connaissances en premiers secours</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23E30613' width='100' height='100' rx='15'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white'>+</text></svg>">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"></div>
+                        <div class="logo-text">Quiz<span>Secouriste</span>.ch</div>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="container">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        Conforme aux directives suisses
+                    </div>
+                    <h1 class="hero-title">
+                        Testez vos compétences de <span>Secouriste</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        90 questions réparties en 3 niveaux de difficulté pour évaluer et renforcer vos connaissances en premiers secours selon les standards suisses.
+                    </p>
+                </section>
+
+                <!-- Level Cards -->
+                <section class="levels-grid">
+                    <!-- Niveau 1: BLS-AED -->
+                    <a href="quiz.html?niveau=1" class="level-card niveau-1" style="--index: 0">
+                        <span class="level-number">1</span>
+                        <div class="level-icon">🫀</div>
+                        <h2 class="level-title">BLS-AED</h2>
+                        <p class="level-description">
+                            Réanimation cardio-pulmonaire, utilisation du défibrillateur, positions d'attente et gestes de base pour le grand public et First Responders.
+                        </p>
+                        <div class="level-meta">
+                            <span class="level-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                                30 questions
+                            </span>
+                            <span class="level-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                                Débutant
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Niveau 2: Secouriste -->
+                    <a href="quiz.html?niveau=2" class="level-card niveau-2" style="--index: 1">
+                        <span class="level-number">2</span>
+                        <div class="level-icon">🩺</div>
+                        <h2 class="level-title">Secouriste</h2>
+                        <p class="level-description">
+                            Évaluation ABCDE, prise en charge des traumatismes, urgences médicales et compétences avancées pour Samaritains et secouristes d'entreprise.
+                        </p>
+                        <div class="level-meta">
+                            <span class="level-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                                30 questions
+                            </span>
+                            <span class="level-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                                Intermédiaire
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Niveau 3: Médecine de Catastrophe -->
+                    <a href="quiz.html?niveau=3" class="level-card niveau-3" style="--index: 2">
+                        <span class="level-number">3</span>
+                        <div class="level-icon">🚨</div>
+                        <h2 class="level-title">Médecine de Catastrophe</h2>
+                        <p class="level-description">
+                            Triage START/SALT, gestion d'afflux massif de victimes, coordination des secours et protocoles spécifiques aux situations de crise.
+                        </p>
+                        <div class="level-meta">
+                            <span class="level-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                                30 questions
+                            </span>
+                            <span class="level-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                                Avancé
+                            </span>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- Sources Section -->
+                <section class="sources-section" style="margin-top: var(--space-3xl); text-align: center;">
+                    <h3 style="font-size: 1rem; color: var(--gray-500); font-weight: 500; margin-bottom: var(--space-md);">
+                        Sources de référence
+                    </h3>
+                    <div style="display: flex; justify-content: center; gap: var(--space-xl); flex-wrap: wrap; color: var(--gray-400); font-size: 0.875rem;">
+                        <span>Swiss Resuscitation Council (SRC)</span>
+                        <span>•</span>
+                        <span>Interassociation de Sauvetage (IAS)</span>
+                        <span>•</span>
+                        <span>Fédération Suisse des Samaritains (SSS)</span>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p class="footer-text">
+                        © 2025 Quiz Secouriste Suisse — Outil de formation non officiel
+                    </p>
+                    <div class="footer-links">
+                        <a href="https://www.resuscitation.ch" target="_blank" rel="noopener">SRC</a>
+                        <a href="https://www.ivr-ias.ch" target="_blank" rel="noopener">IAS</a>
+                        <a href="https://www.samariter.ch" target="_blank" rel="noopener">SSS</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
